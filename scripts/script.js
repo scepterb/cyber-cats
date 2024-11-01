@@ -3,7 +3,7 @@ const images = [
     "media/soltes.jpg",
     "media/soltes2.jpg",
     "media/soltes3.jpg",
-    "media/soltes4.jpg",
+    "media/soltes5.jpg",
     "media/jork.jpg",
     "media/jork2.jpg",
     "media/petel.jpg",
