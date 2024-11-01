@@ -8,6 +8,7 @@ h1 {
     font: bold 48px Georgia;
 }
 
-#soltes {
+#random-image {
     max-height: 80vh;
+    display: none;
 }
