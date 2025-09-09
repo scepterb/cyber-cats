@@ -1,59 +1,29 @@
-import { useEffect, useState } from 'react';
-import { auth, googleProvider, db } from "./firebase";
-import {
-  onAuthStateChanged,
-  signInWithPopup,
-  signOut,
-  type User,
-} from "firebase/auth";       // https://firebase.google.com/docs/reference/js/auth.md#auth_package
-import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
+import TooltipLink from "./TooltipLink";
 
-export function Home() {
-  const [user, setUser] = useState<User | null>(auth.currentUser);
-
-  useEffect(() => onAuthStateChanged(auth, setUser), []);
-
-  const handleGoogleSignIn = async () => {
-    const res = await signInWithPopup(auth, googleProvider);
-    const u = res.user;
-    // Create or update user profile in Firestore
-    const ref = doc(db, "users", u.uid);
-    const snap = await getDoc(ref);
-    if (!snap.exists()) {
-      await setDoc(ref, {
-        uid: u.uid,
-        email: u.email,
-        name: u.displayName,
-        photoURL: u.photoURL,
-        createdAt: serverTimestamp(),
-      });
-    } else {
-      await setDoc(
-        ref,
-        { email: u.email, name: u.displayName, photoURL: u.photoURL, updatedAt: serverTimestamp() },
-        { merge: true }
-      );
-    }
-  };
-
-  const handleSignOut = async () => signOut(auth);
+export default function Home() {
 
   return (
     <div style={{ padding: 24, maxWidth: 720, margin: "0 auto" }}>
       <h1>My Club</h1>
       <p>Welcome to the club homepage.</p>
+      <TooltipLink href="https://energy.mit.edu" tooltip="energy.mit.edu">
+        Clean Energy
+      </TooltipLink>
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
 
-      {user ? (
-        <>
-          <p>Signed in as {user.displayName}</p>
-          <img src={user.photoURL ?? ""} alt="" width={48} height={48} style={{ borderRadius: 24 }} />
-          <div style={{ marginTop: 12 }}>
-            <button onClick={handleSignOut}>Sign out</button>
-          </div>
-        </>
-      ) : (
-        <button onClick={handleGoogleSignIn}>Sign in with Google</button>
-      )}
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+</p>
     </div>
   );
 

@@ -21,6 +21,14 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Set the "theme" attribute before React loads, preventing a flash of the wrong theme -->
+    <script>
+      const t = localStorage.getItem("theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    </script>
+    
+    <!-- Load React bundle -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
