@@ -3,6 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 
 import AuthButton from "./AuthButton";
 import { useTheme } from "./useTheme";
+import lightLogo from "./assets/hack-cat-logo-light.png";
+import darkLogo from "./assets/hack-cat-logo-dark.png";
 
 import './NavBar.css';
 
@@ -33,17 +35,13 @@ export default function NavBar() {
 
   //const [menuOpen, setMenuOpen] = useState(false);
 
-  const logoSrc = theme === "light"
-    ? "./src/assets/hack-cat-logo-light.png"
-    : "./src/assets/hack-cat-logo-dark.png";
-
   return (
     <header className="nav-wrap">
       { /* Small screens */}
       <div className="nav-small">
         <div className="n-left">
           <Link to="/" className="logo">
-            <img src={logoSrc} alt="Hack Cats Logo" className="logo-image" />
+            <img src={theme == "dark" ? darkLogo : lightLogo} alt="Hack Cats Logo" className="logo-image" />
           </Link>
         </div>
 
@@ -58,7 +56,7 @@ export default function NavBar() {
       <div className="nav-large">
         <div className="n-left n-pill">
           <Link to="/" className="logo">
-            <img src={logoSrc} alt="Hack Cats Logo" className="logo-image" />
+            <img src={theme == "dark" ? darkLogo : lightLogo} alt="Hack Cats Logo" className="logo-image" />
           </Link>
           
           <div className="pill-divider" />
