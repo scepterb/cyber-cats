@@ -65,21 +65,13 @@ button {
   display: inline-flex; 
   justify-content: center;
   align-items: center;
-  margin: 10px;  
-  padding: 0;
-
-  width: 52px;
-  height: 52px;    
-  border-radius: 50%;       /* full circle */
-  background: transparent;      
-  transition: border-color 0.15s;
-
+    
+  border: none;
+  outline: 3px solid var(--text);
+  outline-offset: -2px;
+  transition: outline-color 0.15s;
   cursor: pointer;
 }
 button:hover {
-  border: 3px solid var(--accent);
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 3px solid var(--accent);
 }

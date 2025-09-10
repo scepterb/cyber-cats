@@ -14,7 +14,7 @@ type DarkModeButtonProps = {
 };
 function DarkModeButton({theme, toggleTheme }: DarkModeButtonProps) {
   return (
-    <button className="nav-button" onClick={toggleTheme} aria-label="Toggle dark mode">
+    <button onClick={toggleTheme} aria-label="Toggle dark mode">
       {theme === "dark" ? "🌙" : "☀️"}
     </button>
   )

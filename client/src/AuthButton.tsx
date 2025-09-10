@@ -41,7 +41,7 @@ export default function AuthButton() {
 
   if (user) {
     return (
-      <button title="Sign Out" onClick={handleSignOut}>
+      <button className="signout-btn" title="Sign Out" onClick={handleSignOut}>
         <img
           src={user.photoURL ?? ""}
           alt="Profile"
@@ -53,7 +53,7 @@ export default function AuthButton() {
 
   return (
     <button className="login-btn" onClick={handleGoogleSignIn}>
-      Sign In with Google
+      <span className="link">Google Sign-In</span>
     </button>
   );
 }
