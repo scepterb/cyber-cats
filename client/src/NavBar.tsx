@@ -32,7 +32,7 @@ export default function NavBar() {
       { /* Small screens */}
       <div className="nav-small">
         <div className="n-left">
-          <Link to="/" className="logo">
+          <Link to="/" className="logo" onClick={() => setOpen(false)}>
             <img src={theme == "dark" ? darkLogo : lightLogo} alt="Hack Cats Logo" className="logo-image" />
           </Link>
         </div>
@@ -42,9 +42,9 @@ export default function NavBar() {
 
           {/* Hamburger */}
           <button className={`hamburger ${open ? "open" : ""}`} onClick={() => setOpen(v => !v)} aria-label="Open menu">
-            <div className="line" />
-            <div className="line" />
-            <div className="line" />
+            <div className="line top-line" />
+            <div className="line mid-line" />
+            <div className="line bot-line" />
           </button>
         </div>
       </div>
@@ -52,7 +52,7 @@ export default function NavBar() {
       { /* Large screens */}
       <div className="nav-large">
         <div className="n-left n-pill">
-          <Link to="/" className="logo">
+          <Link to="/" className="logo" onClick={() => setOpen(false)}>
             <img src={theme == "dark" ? darkLogo : lightLogo} alt="Hack Cats Logo" className="logo-image" />
           </Link>
           
@@ -79,10 +79,10 @@ export default function NavBar() {
         onClick={() => setOpen(false)}
       >
         <nav className="menu-list" onClick={e => e.stopPropagation()}>
-          <NavLink to="/about" className="menu-item">About</NavLink>
-          <NavLink to="/resources" className="menu-item">Resources</NavLink>
-          <NavLink to="/the-box" className="menu-item">The Box</NavLink>
-          <NavLink to="/weeks" className="menu-item">Weeks</NavLink>
+          <NavLink to="/about" className="menu-item" onClick={() => setOpen(false)}>About</NavLink>
+          <NavLink to="/resources" className="menu-item" onClick={() => setOpen(false)}>Resources</NavLink>
+          <NavLink to="/the-box" className="menu-item" onClick={() => setOpen(false)}>The Box</NavLink>
+          <NavLink to="/weeks" className="menu-item" onClick={() => setOpen(false)}>Weeks</NavLink>
 
           <AuthMenuItem />
 

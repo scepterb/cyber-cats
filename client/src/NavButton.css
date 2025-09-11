@@ -38,13 +38,13 @@
   height: 3px; 
   background: var(--text);
   display: block;
-  transition: background-color var(--anim-time);
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 .hamburger:hover .line {
   background: var(--accent);
 }
 /* re-style the hamburger to an X when open (credit: ChatGPT) */
 .hamburger.open {gap: 0;}
-.hamburger.open .line:nth-child(1) {transform: translateY(3px) rotate(45deg);}
-.hamburger.open .line:nth-child(2) {transform: rotate(-45deg);}
-.hamburger.open .line:nth-child(3) {opacity: 0;}
+.hamburger.open .top-line {transform: rotate(45deg); transform-origin: 30% 50%;}
+.hamburger.open .mid-line {opacity: 0;}
+.hamburger.open .bot-line {transform: rotate(-45deg); transform-origin: 30% 50%;}
