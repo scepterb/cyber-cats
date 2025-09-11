@@ -1,0 +1,6 @@
+.announcement {
+    background-color: red;
+}
+
+.announcement[data-theme="dark"] {background-color: lightcoral;}
+.announcement:empty {display: none;}

@@ -1,6 +1,6 @@
 // import React from "react";
 
-export default function Weeks() {
+export default function Notes() {
   const items = [
     { id: "w1-notes",  title: "Week 1 Notes",  url: "/notes/week1.pdf" },
     { id: "w1-slides", title: "Week 1 Slides", url: "https://example.com/slides1" },

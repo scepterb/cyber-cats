@@ -81,8 +81,8 @@ export default function NavBar() {
         <nav className="menu-list" onClick={e => e.stopPropagation()}>
           <NavLink to="/about" className="menu-item" onClick={() => setOpen(false)}>About</NavLink>
           <NavLink to="/resources" className="menu-item" onClick={() => setOpen(false)}>Resources</NavLink>
+          <NavLink to="/notes" className="menu-item" onClick={() => setOpen(false)}>Notes</NavLink>
           <NavLink to="/the-box" className="menu-item" onClick={() => setOpen(false)}>The Box</NavLink>
-          <NavLink to="/weeks" className="menu-item" onClick={() => setOpen(false)}>Weeks</NavLink>
 
           <AuthMenuItem />
 
