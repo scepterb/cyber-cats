@@ -1,4 +1,4 @@
-import { useAuth } from "./useAuth";
+import { useAuth } from "../useAuth";
 import "./NavButton.css";
 
 export default function AuthButton() {

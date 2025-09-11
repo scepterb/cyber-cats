@@ -3,9 +3,9 @@ import { useState} from "react";
 
 import AuthButton from "./AuthButton";
 import AuthMenuItem from "./AuthMenuItem";
-import { useTheme } from "./useTheme";
-import lightLogo from "./assets/hack-cat-logo-light.png";
-import darkLogo from "./assets/hack-cat-logo-dark.png";
+import { useTheme } from "../useTheme";
+import lightLogo from "../assets/hack-cat-logo-light.png";
+import darkLogo from "../assets/hack-cat-logo-dark.png";
 
 import './NavBar.css';
 import './NavButton.css';

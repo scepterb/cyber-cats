@@ -38,7 +38,7 @@
   height: 3px; 
   background: var(--text);
   display: block;
-  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out, background-color var(--anim-time);
 }
 .hamburger:hover .line {
   background: var(--accent);

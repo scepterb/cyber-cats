@@ -1,4 +1,4 @@
-import TooltipLink from "./TooltipLink";
+import TooltipLink from "../components/TooltipLink";
 
 export default function Home() {
 

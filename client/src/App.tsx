@@ -1,9 +1,9 @@
 
 import { Routes, Route } from "react-router-dom";
 
-import Weeks from "./Weeks";
-import Home from "./Home";
-import NavBar from "./NavBar";
+import Weeks from "./pages/Weeks";
+import Home from "./pages/Home";
+import NavBar from "./components/NavBar";
 
 import './App.css';
 
