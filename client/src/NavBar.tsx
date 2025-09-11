@@ -1,12 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
-//import { useState } from "react";
+import { useState} from "react";
 
 import AuthButton from "./AuthButton";
+import AuthMenuItem from "./AuthMenuItem";
 import { useTheme } from "./useTheme";
 import lightLogo from "./assets/hack-cat-logo-light.png";
 import darkLogo from "./assets/hack-cat-logo-dark.png";
 
 import './NavBar.css';
+import './NavButton.css';
+import './NavMenu.css';
 
 type DarkModeButtonProps = {
   theme: string;
@@ -14,26 +17,15 @@ type DarkModeButtonProps = {
 };
 function DarkModeButton({theme, toggleTheme }: DarkModeButtonProps) {
   return (
-    <button onClick={toggleTheme} aria-label="Toggle dark mode">
+    <button className="darkmode-btn" onClick={toggleTheme} aria-label="Toggle dark mode">
       {theme === "dark" ? "🌙" : "☀️"}
     </button>
   )
 }
 
-function Hamburger({ onClick } : { onClick: () => void}) {
-  return (
-    <button className="hamburger" onClick={onClick} aria-label="Open menu">
-      <div className="line" />
-      <div className="line" />
-      <div className="line" />
-    </button>
-  );
-}
-
 export default function NavBar() {
   const { theme, toggle: toggleTheme } = useTheme();    // destructuring: not using the settheme var
-
-  //const [menuOpen, setMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <header className="nav-wrap">
@@ -46,9 +38,14 @@ export default function NavBar() {
         </div>
 
         <div className="n-right">
-          <DarkModeButton theme={theme} toggleTheme={toggleTheme} />
-          {/* FIX THIS */}
-          <Hamburger onClick={toggleTheme} />  
+          <DarkModeButton theme={theme} toggleTheme={toggleTheme} aria-label="Toggle menu" aria-expanded={open} />
+
+          {/* Hamburger */}
+          <button className={`hamburger ${open ? "open" : ""}`} onClick={() => setOpen(v => !v)} aria-label="Open menu">
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+          </button>
         </div>
       </div>
 
@@ -74,6 +71,22 @@ export default function NavBar() {
           
           <AuthButton />
         </div>
+      </div>
+
+      {/* mobile dropdown attached to the navbar */}
+      <div
+        className={`menu ${open ? "open" : ""}`}
+        onClick={() => setOpen(false)}
+      >
+        <nav className="menu-list" onClick={e => e.stopPropagation()}>
+          <NavLink to="/about" className="menu-item">About</NavLink>
+          <NavLink to="/resources" className="menu-item">Resources</NavLink>
+          <NavLink to="/the-box" className="menu-item">The Box</NavLink>
+          <NavLink to="/weeks" className="menu-item">Weeks</NavLink>
+
+          <AuthMenuItem />
+
+        </nav>
       </div>
     </header>
 

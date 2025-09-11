@@ -1,0 +1,40 @@
+.menu {
+  position: absolute;
+  width: 100%;
+  border: 1px solid var(--nav);
+  color: var(--text);
+  background: var(--bg-2);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.45);
+  
+  display: none;
+}
+
+.menu.open {display: block; scale: 1;}
+@media (min-width: 900px) {.menu {display: none !important;}}
+
+/* Dropdown items */
+.menu-list {
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+.menu-item {
+  padding: 8px 10px;
+  width: 100%; 
+  display: inline-flex; 
+  justify-content: flex-start;
+  
+  font: bold 20px 'JetBrains Mono';
+  color: var(--text);
+  background: transparent; border: 0; cursor: pointer;
+  border-radius: 10px;
+}
+.menu-item:hover { background: rgba(255,255,255,0.06); }
+/* Because the last item is wrapped in menu-item: */
+.menu-item a {transition: color var(--anim-time);}
+.menu-item:hover a {color: var(--accent);}
+/* Ensure space for last time, and re-style if it contains the profile picture: */
+.menu-item-signout {margin-top: 10px;}
+.menu-item-signout:has(> .logout) {padding: 0px 10px;}
