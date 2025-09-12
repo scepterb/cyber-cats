@@ -1,6 +1,22 @@
+/* Credit: ChatGPT for sizing */
 .announcement {
-    background-color: red;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 40px;
+  width: 100vw;
+  background-color: #dd8798;
+
+  padding: 1px 0px;
 }
 
-.announcement[data-theme="dark"] {background-color: lightcoral;}
+:root[data-theme="dark"] .announcement {background-color: #B23A3F;}
 .announcement:empty {display: none;}
+
+.announcement h2::before, .announcement h2::after {
+  content: "  !!  ";
+  font-size: 1.5em;
+  font-weight: 900;
+}

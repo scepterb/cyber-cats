@@ -7,7 +7,7 @@ type AnnouncementProps = {
 export default function Announcement({ children } : AnnouncementProps) {
   return (
     <div className="announcement">
-      {children}
+      <h2>{children}</h2>
     </div>
   );
 }

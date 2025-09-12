@@ -30,12 +30,12 @@ export default function TooltipLink({tooltip, children, ...props}: TooltipLinkPr
 
       { /* Credit: ChatGPT */ }
       {visible && (
-        <div 
+        <span 
           className="tooltip"
           style={{position: "absolute", left: pos.x + 12, top: pos.y + 12}}
         > 
           {tooltip} 
-        </div>
+        </span>
       )}
     </>
   )

@@ -1,4 +1,4 @@
-import Announcement from "../components/Announcement";
+//import Announcement from "../components/Announcement";
 import TooltipLink from "../components/TooltipLink";
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
     <div style={{ padding: 24, maxWidth: 720, margin: "0 auto" }}>
       <h1>Hacking @ SIHS </h1>
       <h2>&lt;Description of Hack Cats&gt;</h2>
-      <Announcement>Hello!</Announcement>
+      {/* <Announcement>There will be no meeting on Sep 15 (Labor Day)</Announcement> */}
       <p>
         This website is intended to proivde info about this club. 
         You can embed <TooltipLink href="https://energy.mit.edu" tooltip="play.picoctf.org">custom links</TooltipLink> in these paragraphs.
