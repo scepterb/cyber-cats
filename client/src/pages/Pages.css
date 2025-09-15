@@ -1,0 +1,12 @@
+.page-content {
+  padding: 24px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.page-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 130px;
+}

@@ -13,7 +13,7 @@
 }
 
 :root[data-theme="dark"] .announcement {background-color: #B23A3F;}
-.announcement:empty {display: none;}
+
 
 .announcement h2::before, .announcement h2::after {
   content: "  !!  ";

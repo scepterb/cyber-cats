@@ -1,16 +1,22 @@
-//import Announcement from "../components/Announcement";
+import Announcement from "../components/Announcement";
 import TooltipLink from "../components/TooltipLink";
+import Divider from "../components/Divider";
+
+import "./Pages.css";
 
 export default function Home() {
 
   return (
-    <div style={{ padding: 24, maxWidth: 720, margin: "0 auto" }}>
-      <h1>Hacking @ SIHS </h1>
-      <h2>&lt;Description of Hack Cats&gt;</h2>
-      {/* <Announcement>There will be no meeting on Sep 15 (Labor Day)</Announcement> */}
+    <div className="page-content">
+      <div className="page-title">
+        <h1>Hacking @ SIHS </h1>
+        <h2>&lt;Description of Hack Cats&gt;</h2>
+      </div>
+      <Divider />
+      {<Announcement></Announcement>}
       <p>
         This website is intended to proivde info about this club. 
-        You can embed <TooltipLink href="https://energy.mit.edu" tooltip="play.picoctf.org">custom links</TooltipLink> in these paragraphs.
+        You can embed <TooltipLink href="https://play.picoctf.org/playlists/18?m=148" tooltip="play.picoctf.org">custom links</TooltipLink> in these paragraphs.
       </p>
       <p>
         Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.

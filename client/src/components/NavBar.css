@@ -40,11 +40,18 @@
 .logo-image, .pill-logo, .theme-toggle, .hamburger, .profile, .login-btn { flex: 0 0 auto; }
 
 /* LOGO */
+.logo {
+  transition: filter 50ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 1em #646cffaa);
+}
 .logo-image {
   width: 200px;
   height: auto;
   object-fit: contain;
 }
+
 
 /* HEADING LINKS */
 .headings { display: flex; gap: 20px; justify-content: center; }

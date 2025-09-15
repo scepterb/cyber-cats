@@ -1,5 +1,7 @@
 // import React from "react";
 
+import "./Pages.css";
+
 export default function Notes() {
   const items = [
     { id: "w1-notes",  title: "Week 1 Notes",  url: "/notes/week1.pdf" },
