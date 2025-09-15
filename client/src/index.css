@@ -46,6 +46,11 @@ a {
 a:hover {
   color: var(--accent);
 }
+:root[data-theme="dark"] a[download]::before {content: url(./assets/download-dark.svg)}
+:root[data-theme="light"] a[download]::before {content: url(./assets/download-light.svg)}
+/* align icon vertically */
+a[download]:before {display: inline-block; vertical-align: middle;}
+
 .tooltip {
   background: var(--text);
   color: var(--bg);
