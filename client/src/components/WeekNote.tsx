@@ -6,11 +6,12 @@ type WeekNoteProps = {
   week: string;
   slidesUrl?: string;
   notesUrl?: string;
-  homework?: ReactNode;    /* in order to import a Tooltip link */
+  challenge?: ReactNode;     /* in order to import a Tooltip link */
+  homework?: ReactNode;    
   children: ReactNode;
 };
 
-export default function WeekNote({color, week, slidesUrl, notesUrl, homework, children}: WeekNoteProps) {
+export default function WeekNote({color, week, slidesUrl, challenge, notesUrl, homework, children}: WeekNoteProps) {
   return (
     <div className="week-note" style={{ background: `${color}`}}>
 
@@ -28,6 +29,9 @@ export default function WeekNote({color, week, slidesUrl, notesUrl, homework, ch
 
       <div className="week-note-body">
         <p>{children}</p>
+        {challenge && (
+          <p><strong>This Week's Challenge:</strong> {challenge}</p>
+        )}
         {homework && (
           <p><strong>Optional Homework:</strong> {homework}</p>
         )}

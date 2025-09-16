@@ -48,8 +48,8 @@ a:hover {
 }
 :root[data-theme="dark"] a[download]::before {content: url(./assets/download-dark.svg)}
 :root[data-theme="light"] a[download]::before {content: url(./assets/download-light.svg)}
-/* align icon vertically */
-a[download]:before {display: inline-block; vertical-align: middle;}
+/* align icon */
+a[download]::before {vertical-align: middle; padding-right: 3px;}
 
 .tooltip {
   background: var(--text);
