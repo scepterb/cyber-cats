@@ -18,7 +18,7 @@ export default function Notes() {
         color="#B6C5DF30"
       >
         Today's session served as an introduction to the concept of hacking.
-        In the future, any newcomers should sign up to <TooltipLink href="picoctf.org" tooltip="picoctf.org">PicoCTF</TooltipLink> and download <TooltipLink href="https://code.visualstudio.com/download" tooltip="visualstudio.com">VSCode</TooltipLink>, a code editor.
+        In the future, any newcomers should sign up to <TooltipLink href="https://picoctf.org" tooltip="picoctf.org">PicoCTF</TooltipLink> and download <TooltipLink href="https://code.visualstudio.com/download" tooltip="visualstudio.com">VSCode</TooltipLink>, a code editor.
         Alternatively, bookmark the <TooltipLink href="https://vscode.dev/" tooltip="vscode.dev">web version of VSCode</TooltipLink> if you can't download it (which will be the case if you use a school computer).
       </WeekNote>
     </div>
