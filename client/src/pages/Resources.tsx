@@ -16,14 +16,17 @@ export default function Resources() {
         </p>
         <p>
           This particular codespace will automatically install certain tools for you, including 
-          nmap, 
-          the Python language + <TooltipLink href="https://pypi.org/project/pip/" tooltip="pip on pypi.org">pip</TooltipLink>, 
-          <TooltipLink href="https://hashcat.net/wiki/doku.php?id=hashcat" tooltip="hashcat.net">hashcat</TooltipLink>, 
-          <TooltipLink href="https://man.openbsd.org/nc.1" tooltip="man.openbsd.org">netcat-openbsd</TooltipLink>, 
-          smbclient, 
-          ncftp, 
-          gobuster, 
-          and the Python VSCode extension.
+          <ul>
+            <li>nmap,</li>
+            <li>the Python language + <TooltipLink href="https://pypi.org/project/pip/" tooltip="pip on pypi.org">pip</TooltipLink>,</li>
+            <li><TooltipLink href="https://hashcat.net/wiki/doku.php?id=hashcat" tooltip="hashcat.net">hashcat</TooltipLink>,</li>
+            <li><TooltipLink href="https://man.openbsd.org/nc.1" tooltip="man.openbsd.org">netcat-openbsd</TooltipLink>,</li>
+            <li>smbclient,</li>
+            <li>ncftp,</li>
+            <li>gobuster,</li>
+            <li>and the Python VSCode extension</li>
+          </ul>
+          Please note that, for a free GitHub account, codespace usage is limited to 60 hours per month.
         </p>
       </div>
     </>
