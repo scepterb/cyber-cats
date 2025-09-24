@@ -20,7 +20,7 @@ export default function Notes() {
       >
         Today's session served as an introduction to the concept of hacking.
         In the future, any newcomers should sign up to <TooltipLink href="https://picoctf.org" tooltip="picoctf.org">PicoCTF</TooltipLink> and download <TooltipLink href="https://code.visualstudio.com/download" tooltip="visualstudio.com">VSCode</TooltipLink>, a code editor.
-        If you don't want to download VSCode, go to the <Link to="/resources">/resources page</Link> to create and bookmark a <strong>GitHub codespace</strong>, which provides a web version of VSCode.
+        If you don't want to download VSCode, go to the <Link to="/resources">/resources page</Link> to create a <em>GitHub codespace</em> to use instead.
       </WeekNote>
     </div>
   );
