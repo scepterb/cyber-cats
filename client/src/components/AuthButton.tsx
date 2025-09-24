@@ -1,5 +1,5 @@
 import { useAuth } from "../useAuth";
-import "./NavButton.css";
+import "./css/NavButton.css";
 
 export default function AuthButton() {
   const {user, handleGoogleSignIn, handleGoogleSignOut} = useAuth();

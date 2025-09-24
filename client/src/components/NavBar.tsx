@@ -7,9 +7,9 @@ import { useTheme } from "../useTheme";
 import lightLogo from "../assets/hack-cat-logo-light.png";
 import darkLogo from "../assets/hack-cat-logo-dark.png";
 
-import './NavBar.css';
-import './NavButton.css';
-import './NavMenu.css';
+import './css/NavBar.css';
+import './css/NavButton.css';
+import './css/NavMenu.css';
 
 type DarkModeButtonProps = {
   theme: string;

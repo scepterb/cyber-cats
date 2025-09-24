@@ -1,6 +1,6 @@
 import { useAuth } from '../useAuth';
 
-import './NavMenu.css';
+import './css/NavMenu.css';
 
 export default function AuthMenuItem() {
   const {user, handleGoogleSignIn, handleGoogleSignOut} = useAuth();

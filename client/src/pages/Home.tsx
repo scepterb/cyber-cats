@@ -10,10 +10,10 @@ export default function Home() {
     <div className="page-content">
       <div className="page-title">
         <h1>Hacking @ SIHS </h1>
-        <h2>&lt;Description of Hack Cats&gt;</h2>
+        <h3>&lt;Description of Hack Cats&gt;</h3>
       </div>
-      <Divider />
       {<Announcement></Announcement>}
+      <Divider />
       <p>
         This website is intended to proivde info about this club. 
         You can embed <TooltipLink href="https://play.picoctf.org/playlists/18?m=148" tooltip="play.picoctf.org">custom links</TooltipLink> in these paragraphs.

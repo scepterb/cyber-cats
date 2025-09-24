@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import "./WeekNote.css";
+import "./css/WeekNote.css";
 
 type WeekNoteProps = {
   color: string;

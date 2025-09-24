@@ -1,4 +1,4 @@
-import './Announcement.css';
+import './css/Announcement.css';
 
 type AnnouncementProps = {
   children?: React.ReactNode;
