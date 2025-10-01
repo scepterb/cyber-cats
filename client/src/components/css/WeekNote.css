@@ -13,6 +13,17 @@
   gap: 4px;
   align-items: baseline;
 }
-.week-note-title {font-size: 1.5rem; margin: 0;}
 .week-note-links a {margin-right: 15px;}
+.week-note-title {font-size: 1.5rem; margin: 0;}
 .week-note-body {margin-top: 20px;}
+
+/* On small screens, "slides" and "notes" links will appear on top-right of card */
+@media (max-width: 900px) {
+  .week-note-header {
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .week-note-links a {margin-right: 15px;}
+}
