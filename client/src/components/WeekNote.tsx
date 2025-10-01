@@ -18,11 +18,11 @@ export default function WeekNote({color, week, slidesUrl, challenge, notesUrl, h
       <div className="week-note-header">
         <h2 className="week-note-title">Week {week}</h2>
         <div className="week-note-links">
-          <a href={slidesUrl} target="_blank" rel="noopener noreferrer">
-            Slides
-          </a>
           <a href={notesUrl} rel="noopener noreferrer" download>
             Notes
+          </a>
+          <a href={slidesUrl} target="_blank" rel="noopener noreferrer">
+            Slides
           </a>
         </div>
       </div>

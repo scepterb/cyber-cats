@@ -4,8 +4,8 @@ import { useState} from "react";
 import AuthButton from "./AuthButton";
 import AuthMenuItem from "./AuthMenuItem";
 import { useTheme } from "../useTheme";
-import lightLogo from "../assets/hack-cat-logo-light.png";
-import darkLogo from "../assets/hack-cat-logo-dark.png";
+import lightLogo from "../assets/cyber-cat-logo-light.png";
+import darkLogo from "../assets/cyber-cat-logo-dark.png";
 
 import './css/NavBar.css';
 import './css/NavButton.css';
@@ -33,7 +33,7 @@ export default function NavBar() {
       <div className="nav-small">
         <div className="n-left">
           <Link to="/" className="logo" onClick={() => setOpen(false)}>
-            <img src={theme == "dark" ? darkLogo : lightLogo} alt="Hack Cats Logo" className="logo-image" />
+            <img src={theme == "dark" ? darkLogo : lightLogo} alt="Cyber Cats Logo" className="logo-image" />
           </Link>
         </div>
 
@@ -53,7 +53,7 @@ export default function NavBar() {
       <div className="nav-large">
         <div className="n-left n-pill">
           <Link to="/" className="logo" onClick={() => setOpen(false)}>
-            <img src={theme == "dark" ? darkLogo : lightLogo} alt="Hack Cats Logo" className="logo-image" />
+            <img src={theme == "dark" ? darkLogo : lightLogo} alt="Cyber Cats Logo" className="logo-image" />
           </Link>
           
           <div className="pill-divider" />

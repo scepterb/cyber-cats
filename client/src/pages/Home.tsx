@@ -10,7 +10,7 @@ export default function Home() {
     <div className="page-content">
       <div className="page-title">
         <h1>Hacking @ SIHS </h1>
-        <h3>&lt;Description of Hack Cats&gt;</h3>
+        <h3>&lt;Description of Cyber Cats&gt;</h3>
       </div>
       {<Announcement></Announcement>}
       <Divider />
