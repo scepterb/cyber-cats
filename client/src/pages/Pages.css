@@ -8,13 +8,18 @@
   .page-content {padding: 0;}
 }
 
+.subpage-left-align {
+  text-align: left;
+}
+
+.narrow-content {
+  width: 75%;
+  margin: 0 auto;
+}
+
 .page-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 130px;
-}
-
-.subpage-left-align {
-  text-align: left;
 }
