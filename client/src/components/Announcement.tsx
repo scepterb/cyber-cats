@@ -11,5 +11,6 @@ export default function Announcement({ children } : AnnouncementProps) {
     <div className="announcement">
       <h2>{children}</h2>
     </div>
+    
   );
 }

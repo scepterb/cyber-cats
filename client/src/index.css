@@ -1,7 +1,7 @@
 :root {
   font-family: "Albert Sans", Helvetica, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 450;
 
   color-scheme: light dark;
   --bg: #EBEBEB;
@@ -59,7 +59,7 @@ a[download]::before {vertical-align: middle; padding-right: 3px;}
   background: var(--text);
   color: var(--bg);
   padding: 4px 8px;
-  font-size: 14;
+  font-size: 1rem;
   font-weight: 600;
   z-index: 999
 }
@@ -78,21 +78,18 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 1.1;
 }
 h2 {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   line-height: 1;
   margin: 8px 0px;
 }
 h3 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: 500;
   line-height: 1;
-}
-p {
-  font-weight: 450;
 }
 
 button {
@@ -108,4 +105,9 @@ button {
 }
 button:hover {
   outline: 3px solid var(--accent);
+}
+
+
+@media (min-width: 1500px) {
+  html {font-size: 20px;} /* 16px (default) -> 22px */
 }

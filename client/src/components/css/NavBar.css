@@ -2,7 +2,7 @@
 .nav-wrap { 
   width: 100%; 
   position: fixed;
-  top: 00px; left: 0; right: 0;
+  top: 0px; left: 0px; right: 0px;
   z-index: 1000;
   background: var(--bg);
 }
@@ -12,24 +12,24 @@
 
 /* Shared */
 .nav-small, .nav-large {
-  height: 64px;
-  margin: 25px 10px 15px;
+  height: 4rem;
+  margin: 1.5rem 0.5rem 1rem;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  gap: 22px;
+  gap: 1.3rem;
 }
 
 /* Left controls (Large) */
 .n-left { flex: 0 0 auto; display: flex; align-items: center; }
 .n-pill {
-  gap: 15px;
-  padding: 4px 22px; 
+  gap: 1rem;
+  padding: 0.25rem 1.5rem; 
   border: 2px solid var(--text); 
   border-radius: 999px; 
   background: var(--nav);
 }
-.pill-divider { width: 1px; height: 24px; background: var(--text); opacity: 0.4; }
+.pill-divider { width: 1px; height: 1.5rem; background: var(--text); opacity: 0.4; }
 
 /* Right controls (large) */
 .n-right { margin-left: auto; display: flex; align-items: center;}
@@ -46,17 +46,17 @@
   filter: drop-shadow(0 0 1em #646cffaa);
 }
 .logo-image {
-  width: 200px;
+  width: 12.5rem;
   height: auto;
   object-fit: contain;
 }
 
 
 /* HEADING LINKS */
-.headings { display: flex; gap: 20px; justify-content: center; }
+.headings { display: flex; gap: 1.25rem; justify-content: center; }
 .heading { 
   font-weight: 600; 
-  font-size: 18px; 
+  font-size: 1.1rem; 
 }
 .heading.active { color: var(--accent); }
 
@@ -67,7 +67,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  height: 25px; /* how tall the fade is */
+  height: 1.5rem; /* how tall the fade is */
   pointer-events: none; /* let clicks pass through */
 
   background: linear-gradient(

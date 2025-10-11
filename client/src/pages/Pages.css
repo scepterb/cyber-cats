@@ -3,9 +3,11 @@
   max-width: 900px;
   margin: 0 auto;
 }
-
 @media (max-width: 900px) {
   .page-content {padding: 0;}
+}
+@media (min-width: 1500px) {
+  .page-content {max-width: 80%; margin: auto;}
 }
 
 .subpage-left-align {
