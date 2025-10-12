@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="page-content">
       <div className="page-title">
-        <h1>Hacking @ SIHS </h1>
+        <h1 className="typing">Hacking @ SIHS </h1>
         <h3 className="narrow-content">We are a cybersecurity and computer engineering club from Saint Ignatius High School.</h3>
       </div>
       <Divider />

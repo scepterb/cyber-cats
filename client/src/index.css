@@ -38,6 +38,9 @@
 
   box-sizing: border-box;
 }
+@media (max-width: 900px) {
+  #root {padding: 0.5rem;}
+}
 
 a {
   font-weight: 600;

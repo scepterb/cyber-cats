@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 @media (max-width: 900px) {
-  .page-content {padding: 0;}
+  .page-content {padding: 24px 0 0;}
 }
 @media (min-width: 1500px) {
   .page-content {max-width: 80%; margin: auto;}
@@ -19,9 +19,55 @@
   margin: 0 auto;
 }
 
+.margin-bottom {
+  margin-bottom: 3rem;
+}
+
 .page-title {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   min-height: 130px;
+}
+
+/* Typing effect breaks on small screens */
+@media (min-width: 900px) {
+  .typing {
+    max-width: max-content; /* The width of the box is the width of the text */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--accent); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .03em; /* Adjust as needed */
+    animation: 
+      typing 3.0s steps(50, end),
+      blink-caret 1s step-end infinite;
+  }
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--accent); }
+  }
+}
+
+.table-resource {
+  display: flex;
+  border-bottom: 1px solid var(--accent-soft);
+}
+.table-resource-name {
+  width: 20%;
+  padding: 0.5rem;
+  border-right: 1px solid var(--accent-soft);
+  overflow-wrap: break-word;
+}
+.table-resource-desc {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  flex: 1;
+
+  white-space: pre-line;
 }
