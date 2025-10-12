@@ -13,7 +13,7 @@ export default function Home() {
         <h3 className="narrow-content">We are a cybersecurity and computer engineering club from Saint Ignatius High School.</h3>
       </div>
       <Divider />
-      {<Announcement>We will meet this week, on Monday, Oct 13</Announcement>}
+      {<Announcement>We will have our first meeting this week, on Monday, Oct 13</Announcement>}
       <p>
         This website is intended to provide info about this club. 
         You can embed <TooltipLink href="https://play.picoctf.org/playlists/18?m=148" tooltip="play.picoctf.org">custom links</TooltipLink> in these paragraphs.

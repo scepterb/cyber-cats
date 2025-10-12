@@ -12,7 +12,7 @@ export default function Resources() {
         <p>
           Those who can't download VSCode or access the terminal on their personal device should create a GitHub codespace with <TooltipLink href="https://github.com/codespaces/new?repo=scepterb/cyber-cats-codespace" tooltip="github.com" target="_blank">this link</TooltipLink>.
           To do so, you must create a <Annotation note="Github is a website allowing programmers to store their projects in things called 'repositories' so that others can collaborate">GitHub account.</Annotation> 
-          <em>GitHub codespaces</em> are basically a cloud computer running VSCode for you. Bookmark this page: we'll use it to write code and connect to remote computers.
+          GitHub codespaces are basically a cloud computer running VSCode for you. Bookmark this page: we'll use it to write code and connect to remote computers.
         </p>
         <p>
           This particular codespace will automatically install certain tools for you, including 

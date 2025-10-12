@@ -3,14 +3,14 @@
   margin: 2.5rem 0;
   padding: 1px 0px;
 
-  text-wrap: nowrap;
-  overflow: hidden;
   text-align: center;
 }
 
 :root[data-theme="dark"] .announcement {background-color: #B23A3F;}
 
-
+.announcement h2 {
+  font-size: clamp(16px, 2.5vw, 1.6rem); 
+}
 .announcement h2::before, .announcement h2::after {
   content: "  !!  ";
   font-size: 1.5em;
