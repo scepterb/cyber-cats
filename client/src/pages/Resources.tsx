@@ -87,7 +87,7 @@ export default function Resources() {
         <div className="margin-bottom">
           <h2 className="typing">Practicing Hacking</h2>
           <p>
-            Similarly, we often don't meet often enough to really grow those hacking muscles.
+            Similarly, we don't meet often enough to really grow those hacking muscles.
             Believe me: it helps to delve into some practice problems from time to time. It's also kinda fun, too:
           </p>
           <div className="table">

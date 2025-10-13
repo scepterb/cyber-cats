@@ -58,6 +58,7 @@
   display: flex;
   border-bottom: 1px solid var(--accent-soft);
 }
+.table :last-child {border-bottom: none;}
 .table-resource-name {
   width: 20%;
   padding: 0.5rem;
