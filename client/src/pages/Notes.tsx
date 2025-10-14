@@ -11,7 +11,7 @@ export default function Notes() {
         <h1>Notes</h1>
       </div>
       <WeekNote 
-        week="1" 
+        week="0" 
         slidesUrl="https://docs.google.com/presentation/d/1fCPHNNWUVKwPYNQxonIsIsty3eXWMmd2CEUM702oBqY/" 
         notesUrl="./notes/Week-0.md"
         challenge={<TooltipLink href="https://play.picoctf.org/playlists/18?m=148" tooltip="play.picoctf.org">"What's A Net Cat?"</TooltipLink>}
@@ -22,7 +22,7 @@ export default function Notes() {
         In the future, any newcomers should sign up to <TooltipLink href="https://picoctf.org" tooltip="picoctf.org">PicoCTF</TooltipLink> and go to the <Link to="/resources">/resources page</Link> to create a "GitHub codespace", which will be your online code editor.
       </WeekNote>
       <WeekNote 
-        week="2" 
+        week="1" 
         slidesUrl="https://docs.google.com/presentation/d/1tMTvIWddDbPhZPW6l1hFTx5SDFxbF6IFe-pWiDgurOk/edit?slide=id.g2553b51d4ff_0_89#slide=id.g2553b51d4ff_0_89" 
         notesUrl="./notes/Week-1.md"
         challenge={<TooltipLink tooltip="overthewire.org" href="https://overthewire.org/wargames/bandit/">Bandit Wargame</TooltipLink>}
