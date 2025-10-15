@@ -3,7 +3,7 @@
   max-width: 800px;
   margin: 0 auto;
 }
-@media (max-width: 800px) {
+@media (max-width: 8500px) {
   .page-content {padding: 24px 0 0;}
 }
 @media (min-width: 1500px) {
