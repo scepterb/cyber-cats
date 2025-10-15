@@ -7,8 +7,8 @@
   background: var(--bg);
 }
 .nav-small, .nav-large { display: none; }
-@media (max-width: 900px) { .nav-small { display: flex; } }
-@media (min-width: 900px) { .nav-large { display: flex; } }
+@media (max-width: 800px) { .nav-small { display: flex; } }
+@media (min-width: 800px) { .nav-large { display: flex; } }
 
 /* Shared */
 .nav-small, .nav-large {

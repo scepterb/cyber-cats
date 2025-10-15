@@ -2,10 +2,10 @@
   cursor: help;
   margin: 0em 0.5em 0em 0.1em;
   padding: 0.2em;
-  box-shadow: 0 -3em rgba(255,255,255,0.7) inset, 0 -3em var(--accent) inset;
+  box-shadow: 0 -3em rgba(255,255,255,0.8) inset, 0 -3em var(--accent) inset;
 }
 :root[data-theme="dark"] .annotation {
-  box-shadow: 0 -3em rgba(0, 0, 0, 0.2) inset, 0 -3em var(--accent) inset;
+  box-shadow: 0 -3em rgba(0, 0, 0, 0.5) inset, 0 -3em var(--accent) inset;
 }
 
 .annotation-icon {color: var(--accent-hard); font-weight: 900;}

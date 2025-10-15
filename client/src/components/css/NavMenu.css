@@ -11,7 +11,7 @@
 }
 
 .menu.open {display: block; scale: 1;}
-@media (min-width: 900px) {.menu {display: none !important;}}
+@media (min-width: 800px) {.menu {display: none !important;}}
 
 /* Dropdown items */
 .menu-list {

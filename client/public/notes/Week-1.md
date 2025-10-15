@@ -1,4 +1,4 @@
-# Linux Basics
+# Week 1: Linux Basics
 (This week's meeting was partly based off of https://linuxcommand.org/lc3_lts0020.php)
 
 The **k____** and the **s____** are part of a larger system called the **_________ ________** (or "OS").

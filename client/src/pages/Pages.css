@@ -1,9 +1,9 @@
 .page-content {
   padding: 24px;
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
 }
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .page-content {padding: 24px 0 0;}
 }
 @media (min-width: 1500px) {
@@ -31,7 +31,7 @@
 }
 
 /* Typing effect breaks on small screens */
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .typing {
     max-width: max-content; /* The width of the box is the width of the text */
     overflow: hidden; /* Ensures the content is not revealed until the animation */

@@ -22,6 +22,13 @@ const learning_resources: Resource[]  = [
     Don't be intimidated by its complexity: stick with it and become a CLI pro!`,
     href: "https://linuxcommand.org/lc3_learning_the_shell.php#contents"
   },
+  {
+    name: "Crash Course Computer Science",
+    description: `Personally, I struggle to find time to sit down and read through most hacking webtexts. This Crash Course playlist covers the basics of computer engineering in a much-more-engaging video format.
+    
+    Videos 3-9 are the best part of the series. If that sounds like a lot, at least check out their videos on RAM (#7) and the CPU (#8).`,
+    href: "https://www.youtube.com/watch?v=LN0ucKNX0hc&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=3"
+  },
 ];
 const practice_resources: Resource[] = [
   {
@@ -33,6 +40,12 @@ const practice_resources: Resource[] = [
     name: "HackTheBox",
     description: `More difficult. Do not touch this yet.`,
     href: "https://app.hackthebox.com/home"
+  },
+  {
+    name: "Pwn.college",
+    description: `---> If you're looking to do practice outside of class, use Pwn.college. <---
+    Their content is nicely structured and well-explained.`,
+    href: "https://pwn.college/linux-luminarium/"
   }
 ];
 
@@ -45,12 +58,13 @@ export default function Resources() {
         <div className="margin-bottom">
           <h2>The GitHub Codespace</h2>
           <p>
-            Those who can't download VSCode or access the terminal on their personal device should create a GitHub codespace with <TooltipLink href="https://github.com/codespaces/new?repo=scepterb/cyber-cats-codespace" tooltip="github.com" target="_blank">this link</TooltipLink>.
-            To do so, you must create a <Annotation note="Github is a website allowing programmers to store their projects in things called 'repositories' so that others can collaborate">GitHub account.</Annotation> 
-            GitHub codespaces are basically a cloud computer running VSCode for you. Bookmark this page: we'll use it to write code and connect to remote computers.
+            GitHub codespaces are basically a cloud computer running VSCode for you.
+            You can create a Cyber Cats codespace with <TooltipLink href="https://github.com/codespaces/new?repo=scepterb/cyber-cats-codespace" tooltip="github.com" target="_blank">this link</TooltipLink>.
+            To do so, you must create a <Annotation note="Github is a website allowing programmers to store their projects in things called 'repositories' so that others can collaborate">GitHub account.</Annotation>
           </p>
           <p>
-            This particular codespace will automatically install certain tools for you, including 
+            Bookmark your new Cyber Cats codespace: we'll do all our hacking work in here because of our school wi-fi's firewall.
+            The Cyber Cats codespace comes with some pre-installed tools, including
           </p>
           <ul>
             <li>nmap,</li>

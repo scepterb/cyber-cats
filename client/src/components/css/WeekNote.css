@@ -18,7 +18,7 @@
 .week-note-body {margin-top: 1.3rem;}
 
 /* On small screens, "slides" and "notes" links will appear on top-right of card */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .week-note-header {
     display: flex;    
     flex-direction: row;

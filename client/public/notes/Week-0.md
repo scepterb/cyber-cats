@@ -1,4 +1,4 @@
-# Week 1: Shell Basics
+# Week 0: Shell Basics
 A **_____** is the main program of an operating system that loads tasks and scripts into **_____**.
 
 A **______** lets us interact with the **_______**.

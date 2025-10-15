@@ -62,7 +62,6 @@ export default function NavBar() {
             <NavLink to="/about" className="heading">About</NavLink>
             <NavLink to="/resources" className="heading">Resources</NavLink>
             <NavLink to="/notes" className="heading">Notes</NavLink>
-            <NavLink to="/the-box" className="heading">The Box</NavLink>
           </nav>           
         </div>
 
@@ -82,7 +81,6 @@ export default function NavBar() {
           <NavLink to="/about" className="menu-item" onClick={() => setOpen(false)}>About</NavLink>
           <NavLink to="/resources" className="menu-item" onClick={() => setOpen(false)}>Resources</NavLink>
           <NavLink to="/notes" className="menu-item" onClick={() => setOpen(false)}>Notes</NavLink>
-          <NavLink to="/the-box" className="menu-item" onClick={() => setOpen(false)}>The Box</NavLink>
 
           <AuthMenuItem />
 
