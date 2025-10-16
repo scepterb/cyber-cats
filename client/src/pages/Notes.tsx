@@ -34,7 +34,7 @@ export default function Notes() {
       </WeekNote>
       <WeekNote
         week='2'
-        slidesUrl=''
+        slidesUrl='https://docs.google.com/presentation/d/1vo2ZrT0FahdntB5W06VEeweOeIUWtIILd3_zJ6fwNbY/edit?slide=id.g38d5bf61e32_1_159#slide=id.g38d5bf61e32_1_159'
         notesUrl='./notes/Week-2.md'
         challenge={<TooltipLink tooltip='play.picoctf.org' href='https://play.picoctf.org/practice/challenge/414?category=5&page=1'>"Endianness"</TooltipLink>}
         homework={<TooltipLink tooltip='pwn.college' href='https://pwn.college/linux-luminarium/hello/'>Pwn.college "Hello, Hackers"</TooltipLink>}

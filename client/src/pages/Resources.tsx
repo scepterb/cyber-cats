@@ -29,6 +29,11 @@ const learning_resources: Resource[]  = [
     Videos 3-9 are the best part of the series. If that sounds like a lot, at least check out their videos on RAM (#7) and the CPU (#8).`,
     href: "https://www.youtube.com/watch?v=LN0ucKNX0hc&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=3"
   },
+  {
+    name: "cryptohack.org",
+    description: `If you want to learn how AES and RSA cryptography *really* works, complete the first parts of the "Symmetric Cryptography" and "Public Key Cryptography" courses. If I rememver correctly, the AES course has you actually implement your own AES algorithm, which is pretty neat.`,
+    href: "https://cryptohack.org/courses/"
+  }
 ];
 const practice_resources: Resource[] = [
   {
