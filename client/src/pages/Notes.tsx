@@ -41,7 +41,16 @@ export default function Notes() {
         color="#cf72b65f">
           This week, we learned binary and hex represenation. We learned about bits and bytes, endianness, and encodings such as ASCII.<br/>
           The challenge is short this week, so why not try out that homework? It's good review.
-        </WeekNote>
+      </WeekNote>
+      <WeekNote
+        week='3'
+        slidesUrl='https://docs.google.com/presentation/d/1mgMuEn4CX7P6mN-2KqYzTppmMUWOb8kFH3jLe7mTFmU/edit?slide=id.g38d6ff05722_0_34#slide=id.g38d6ff05722_0_34'
+        notesUrl='./Week-3.ipynb'
+        color='#c9bb5477'
+      >
+        This week, we learned to program in Python. No lecture this week: see the slides for more info.
+      </WeekNote>
+
     </div>
   );
 }
