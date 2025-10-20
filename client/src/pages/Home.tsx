@@ -1,8 +1,10 @@
 import Announcement from "../components/Announcement";
-import TooltipLink from "../components/TooltipLink";
+// import TooltipLink from "../components/TooltipLink";
+import { Link } from "react-router-dom";
 import Divider from "../components/Divider";
 
 import "./Pages.css";
+
 
 export default function Home() {
 
@@ -14,9 +16,10 @@ export default function Home() {
       </div>
       <Divider />
       {<Announcement></Announcement>}
+      <h3>CURIOUS ABOUT JOINING?</h3>
       <p>
-        This website is intended to provide info about this club. 
-        You can embed <TooltipLink href="https://play.picoctf.org/playlists/18?m=148" tooltip="play.picoctf.org">custom links</TooltipLink> in these paragraphs.
+        Please follow the instructions in the <Link to="/notes">Week 0 note</Link> to be ready for your first meeting.<br/>
+        We meet during Monday formation in <strong>LH323</strong>. I talk more about what we do in <Link to="/about">/about</Link>.
       </p>
       
     </div>

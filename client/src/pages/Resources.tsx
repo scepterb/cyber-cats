@@ -31,7 +31,7 @@ const learning_resources: Resource[]  = [
   },
   {
     name: "cryptohack.org",
-    description: `If you want to learn how AES and RSA cryptography *really* works, complete the first parts of the "Symmetric Cryptography" and "Public Key Cryptography" courses. If I rememver correctly, the AES course has you actually implement your own AES algorithm, which is pretty neat.`,
+    description: `If you want to learn how AES and RSA cryptography *really* works, complete the first parts of the "Symmetric Cryptography" and "Public Key Cryptography" courses. If I remember correctly, the AES course has you actually implement your own AES algorithm, which is pretty neat.`,
     href: "https://cryptohack.org/courses/"
   }
 ];
@@ -61,28 +61,17 @@ export default function Resources() {
         <h1>Resources</h1>
 
         <div className="margin-bottom">
-          <h2>The GitHub Codespace</h2>
+          <h2>Creating a GitHub Codespace</h2>
           <p>
-            GitHub codespaces are basically a cloud computer running VSCode for you.
-            You can create a Cyber Cats codespace with <TooltipLink href="https://github.com/codespaces/new?repo=scepterb/cyber-cats-codespace" tooltip="github.com" target="_blank">this link</TooltipLink>.
-            To do so, you must create a <Annotation note="Github is a website allowing programmers to store their projects in things called 'repositories' so that others can collaborate">GitHub account.</Annotation>
+            We will be doing most of our hacking work in a GitHub codespace, a web-based code editor.<br/>
+            To create your own Cyber Cats codespace, first create a <Annotation note="Github is a website allowing programmers to store their projects in things called 'repositories' so that others can collaborate">GitHub</Annotation> account at <TooltipLink tooltip="github.com" href="https://github.com/signup" target="_blank">github.com</TooltipLink>, 
+            and then click <TooltipLink href="https://github.com/codespaces/new?repo=scepterb/cyber-cats-codespace" tooltip="github.com/codespaces" target="_blank">this link</TooltipLink>.
           </p>
           <p>
-            Bookmark your new Cyber Cats codespace: we'll do all our hacking work in here because of our school wi-fi's firewall.
-            The Cyber Cats codespace comes with some pre-installed tools, including
+            Once the codespace is started up, be patient: it will be a minute before GitHub finishes building the codespace. Once it is built, <strong className="color">bookmark the tab</strong> so you can skip this setup next time.
           </p>
-          <ul>
-            <li>nmap,</li>
-            <li>the Python language + <TooltipLink href="https://pypi.org/project/pip/" tooltip="pip on pypi.org" target="_blank">pip</TooltipLink>,</li>
-            <li><TooltipLink href="https://hashcat.net/wiki/doku.php?id=hashcat" tooltip="hashcat.net" target="_blank">hashcat</TooltipLink>,</li>
-            <li><TooltipLink href="https://man.openbsd.org/nc.1" tooltip="man.openbsd.org" target="_blank">netcat-openbsd</TooltipLink>,</li>
-            <li>smbclient,</li>
-            <li>ncftp,</li>
-            <li>gobuster,</li>
-            <li>and the Python VSCode extension</li>
-          </ul>
           <p>
-            Please note that, for a free GitHub account, codespace usage is limited to 60 hours per month.
+            We will do all of our hacking work in here because of our school wi-fi's firewall. Please note that, for a free GitHub account, codespace usage is limited to 60 hours per month.
           </p>
         </div>
 

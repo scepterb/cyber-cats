@@ -13,17 +13,17 @@ export default function Notes() {
       <WeekNote 
         week="0" 
         slidesUrl="https://docs.google.com/presentation/d/1fCPHNNWUVKwPYNQxonIsIsty3eXWMmd2CEUM702oBqY/" 
-        notesUrl="./notes/Week-0.md"
+        notesUrl="https://docs.google.com/document/d/1Sz2H8ALQLPKUJCdGZRHjetOojqSCnAFDFBPxgJfaAOA/edit?usp=sharing"
         challenge={<TooltipLink href="https://play.picoctf.org/playlists/18?m=148" tooltip="play.picoctf.org">"What's A Net Cat?"</TooltipLink>}
         homework={<TooltipLink tooltip="play.picoctf.org" href="https://play.picoctf.org/playlists/18?m=153">"Wave a Flag"</TooltipLink>}
         color="#B6C5DF30"
       >
         Today's session served as an introduction to the concept of hacking.
-        In the future, any newcomers should sign up to <TooltipLink href="https://picoctf.org" tooltip="picoctf.org">PicoCTF</TooltipLink> and go to the <Link to="/resources">/resources page</Link> to create a "GitHub codespace", which will be your online code editor.
+        In the future, any newcomers should sign up to <TooltipLink href="https://picoctf.org" tooltip="picoctf.org">PicoCTF</TooltipLink> and go to the <Link to="/resources">/resources page</Link> to create a "GitHub codespace", which will serve as your online code editor.
       </WeekNote>
       <WeekNote 
         week="1" 
-        slidesUrl="https://docs.google.com/presentation/d/1tMTvIWddDbPhZPW6l1hFTx5SDFxbF6IFe-pWiDgurOk/edit?slide=id.g2553b51d4ff_0_89#slide=id.g2553b51d4ff_0_89" 
+        slidesUrl="https://docs.google.com/document/d/1xMalVZrqFH6hyglt0mAz3Hl6npvK5E0XbOXnPcGlcN4/edit?usp=sharing" 
         notesUrl="./notes/Week-1.md"
         challenge={<TooltipLink tooltip="overthewire.org" href="https://overthewire.org/wargames/bandit/">Bandit Wargame</TooltipLink>}
         homework={<TooltipLink tooltip='play.picoctf.org' href='https://play.picoctf.org/playlists/18?m=154'>"Tab, Tab, Attack"</TooltipLink>}
@@ -35,7 +35,7 @@ export default function Notes() {
       <WeekNote
         week='2'
         slidesUrl='https://docs.google.com/presentation/d/1vo2ZrT0FahdntB5W06VEeweOeIUWtIILd3_zJ6fwNbY/edit?slide=id.g38d5bf61e32_1_159#slide=id.g38d5bf61e32_1_159'
-        notesUrl='./notes/Week-2.md'
+        notesUrl='https://docs.google.com/document/d/1qo6X-r8MaYDTsUbRfPUnp33OCOuuM7vzmHNH6Ol61Eo/edit?usp=sharing'
         challenge={<TooltipLink tooltip='play.picoctf.org' href='https://play.picoctf.org/practice/challenge/414?category=5&page=1'>"Endianness"</TooltipLink>}
         homework={<TooltipLink tooltip='pwn.college' href='https://pwn.college/linux-luminarium/hello/'>Pwn.college "Hello, Hackers"</TooltipLink>}
         color="#cf72b65f">
