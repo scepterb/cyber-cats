@@ -110,6 +110,7 @@ button:hover {
   outline: 3px solid var(--accent);
 }
 
+img {min-width: 0;}  /* enable flex resizing of images */
 
 @media (min-width: 1500px) {
   html {font-size: 20px;} /* 16px (default) -> 22px */

@@ -1,0 +1,2 @@
+# cyber cats
+Hello future-leader-of-cyber-cats. This is Ben. What you're about to read is a brief guide to running this club, a guide compiled by me and (hopefully) everyone who has had the role since.

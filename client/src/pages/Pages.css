@@ -9,26 +9,26 @@
 @media (min-width: 1500px) {
   .page-content {max-width: 80%; margin: auto;}
 }
-
-.subpage-left-align {
-  text-align: left;
-}
-
-.narrow-content {
-  width: 75%;
-  margin: 0 auto;
-}
-
-.margin-bottom {
-  margin-bottom: 3rem;
-}
-
 .page-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 130px;
 }
+
+
+.subpage-left-align {text-align: left;}
+
+.narrow-content {width: 75%; margin: 0 auto;}
+
+.margin-bottom {margin-bottom: 3rem;}
+
+.center-text {text-align: center;}
+
+.color {color: var(--accent-hard)}
+
+@media (max-width: 800px) {.hide-on-mobile {display: none;} }
+
 
 /* Typing effect breaks on small screens */
 @media (min-width: 800px) {
@@ -71,4 +71,20 @@
   flex: 1;
 
   white-space: pre-line;
+}
+
+.section-split {display: flex; align-items: center; gap: 2rem}
+.section-split .left {flex: 1 1 60%;}
+.section-split .right {flex: 0 0 40%;}
+
+/* Stacking the two elements on small screents */
+@media (max-width: 800px) {
+  .section-split {
+    flex-direction: column;
+  }
+  .section-split .left,
+  .section-split .right {
+    flex: 1 1 auto;
+    width: 100%;
+  }
 }

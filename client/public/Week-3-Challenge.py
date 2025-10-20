@@ -7,11 +7,10 @@
 #   data (34 byte string, BE)
 
 # Print data as a string and everything else as an integer
-# Run `week-3-server`` to submit answers
+# Run `./week-3-server` to submit answers
 
 intercepted_packet = b"\x04\x1b1\xd4\xae@t\x0b\xb8\x40t\x0bA llama? \x48\x65\x27\x73 supposed to be dead!"
 
-version = int.from_bytes(intercepted_packet[0:1], 'little')
-string = b"A llama? \x48\x65\x27\x73 supposed to be dead!"
+version = int.from_bytes(??, 'little')
 
-print(len(string))
+print(version)
